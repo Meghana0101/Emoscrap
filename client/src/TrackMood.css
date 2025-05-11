@@ -1,0 +1,174 @@
+/* src/styles/TrackMood.css */
+
+.track-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  .track-container h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .track-container p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .track-container button {
+    margin: 0 0.5rem;
+    padding: 8px 16px;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .track-container button:hover {
+    background-color: #554bce;
+  }
+  
+  .mood-btn {
+    padding: 10px 20px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .mood-btn:hover {
+    background-color: #5849d3;
+  }
+  
+  .track-mood-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 64px);
+  }
+  
+  .calendar-container {
+    flex: 0 0 350px;
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .graph-section {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .graph-section h2 {
+    margin-bottom: 10px;
+    color: #4b4b9f;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .button-group button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    background: #6c63ff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-weight: 500;
+  }
+  
+  .button-group button:hover {
+    background: #5a52d5;
+  }
+  
+  .graph-container {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    min-height: 300px;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    font-size: 1.2rem;
+    color: #dc3545;
+  }
+  
+  /* Calendar customization */
+  .react-calendar {
+    width: 100%;
+    border: none;
+    font-family: inherit;
+  }
+  
+  .react-calendar__tile {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .react-calendar__tile--now {
+    background: #e3e3ff;
+  }
+  
+  .react-calendar__tile--active {
+    background: #6c63ff !important;
+    color: white;
+  }
+  
+  .react-calendar__navigation button {
+    min-width: 44px;
+    background: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+  
+  .react-calendar__navigation button:enabled:hover,
+  .react-calendar__navigation button:enabled:focus {
+    background-color: #f8f9fa;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .track-mood-container {
+      flex-direction: column;
+      padding: 1rem;
+    }
+    
+    .calendar-container {
+      flex: none;
+      width: 100%;
+    }
+  }
+  

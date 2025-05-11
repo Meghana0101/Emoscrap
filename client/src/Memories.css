@@ -1,0 +1,44 @@
+.memories-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .memory-date-block {
+    margin-bottom: 1.5rem;
+  }
+  
+  .memory-snippet {
+    background-color: #f0f0ff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    list-style-type: '📌 ';
+  }
+  .memory-date-block {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f4f6fc;
+    border-radius: 8px;
+  }
+  
+  .memory-snippet {
+    background-color: #eef1ff;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    list-style-type: '📝 ';
+  }
+  
+  .memory-photo {
+    display: block;
+    max-width: 100%;
+    max-height: 300px;
+    margin: 1rem 0;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+  }
+    
