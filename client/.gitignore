@@ -1,5 +1,57 @@
-# Logs
-logs
+# === Node.js (React frontend) ===
+client/node_modules/
+client/dist/
+client/.local
+client/.vite
+client/.next/
+client/.cache/
+client/coverage/
+
+# Never ignore these essential files
+!client/package.json
+!client/package-lock.json
+
+# === Python (Flask backend) ===
+flask-server/venv/
+flask-server/__pycache__/
+flask-server/**/*.pyc
+flask-server/**/*.pyo
+flask-server/**/*.pyd
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.so
+
+# Python virtual environments
+venv/
+ENV/
+env/
+
+# === Shared files and secrets ===
+.env
+.env.*
+*.env
+*.env.local
+
+# === MongoDB dump ===
+dump/
+
+# === Operating System and Editor files ===
+.DS_Store
+Thumbs.db
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# === Logs ===
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +59,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# === Miscellaneous ===
+uploads/
+*.sqlite3
+*.db
+coverage/
+htmlcov/
+pytest_cache/
